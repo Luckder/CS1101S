@@ -78,16 +78,18 @@ function two_consecutively(s1, s2) {
 
 function consecutively(list_of_sounds) {
     if (is_list(list_of_sounds)) {
-        const len = length(list_of_sounds);
-        const li = list_of_sounds; // For brevity
-
-       const loop = (l, s, i) => i < len
-                                 ? loop(tail(l),
-                                       two_consecutively(s, head(l)),
-                                       i + 1)
-                                 : s;
-
-        return loop(tail(li), head(li), 1);
+        if (is_null(list_of_sounds)) {
+            return display("Cannot concatenate empty list");
+        } else {
+            const loop = (remaining_sounds, accumulated_sound) => 
+                is_null(remaining_sounds)
+                ? accumulated_sound
+                : loop(tail(remaining_sounds),
+                       two_consecutively(accumulated_sound,
+                                         head(remaining_sounds)));
+    
+            return loop(tail(list_of_sounds), head(list_of_sounds));
+        }
     } else {
         return display("Please provide a list.");
     }
