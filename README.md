@@ -1,6 +1,6 @@
 <img src="https://user-images.githubusercontent.com/74038190/242390524-0c7eb6ed-663b-4ce4-bfbd-18239a38ba1b.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTg0NTk5ODQsIm5iZiI6MTc1ODQ1OTY4NCwicGF0aCI6Ii83NDAzODE5MC8yNDIzOTA1MjQtMGM3ZWI2ZWQtNjYzYi00Y2U0LWJmYmQtMTgyMzlhMzhiYTFiLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTIxVDEzMDEyNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTc0OTExNDExMWI1NjlhMjJmNjBhYWQ5ZDI3ZmFlZmZmOGUyN2IyMTNlYmU0ZjA5YWRhYzY0NDZjYTY1NDFhZDgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.elkQJXgS7KWfI2xE0D94v8RTpMWzmj0ZMgPesC9sN84" width=100%>
 
-The files here are my answers for various assignments in CS1101S (Programming Methodology) of National University of Singapore.
+<span colour=orange>The files here are my answers for various assignments in CS1101S (Programming Methodology) of National University of Singapore.</span>
 
 If somehow, you are able to see this, and you are a CS1101S student currently, then I implore you to value your integrity and only look at my answers after each assignment has passed its deadline.
 
