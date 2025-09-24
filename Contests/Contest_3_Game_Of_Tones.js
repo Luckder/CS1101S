@@ -2,7 +2,7 @@
  ----------------------------------------------------------------------------------------------------------------
  PLEASE GIVE UP TO A MINUTE (UNLIKELY THAT LONG BUT STILL) FOR THE CODE TO RUN AND SONG TO PLAY
  I ASSURE YOU IT WILL RUN EVENTUALLY; IF WEBSITE SAYS "UNRESPONSIVE", CLICK "WAIT" OR DO NOTHING ON THAT PROMPT
- AND AFTER A WHILE IT WILL WORK.
+ AND AFTER A WHILE IT WILL WORK, THE DIALOG BOX WILL GO AWAY BY ITSELF MOMENTARILY AFTERWARDS.
  
  IF NOT, AFTON (PURPLE GUY) IS GONNA COME FIND YOU!
  ----------------------------------------------------------------------------------------------------------------
@@ -71,7 +71,7 @@
 ⡾⠀⠣⠽⡦⠒⠁⠀⢈⡷⠦⢤⡞⠀⠀⠀⣀⠔⠁⣸⠀⠀⠀⣠⢴⡏⠳⢄⡀⠀⣀⣠⠗⠀⠠⣶⣾⠍⢠⠒⡆⢹⠎⠉⠁⠀⠀⡇⠀⢸
 ⢷⠀⠀⠀⠘⠦⠟⠉⠉⠀⠀⡼⠀⠀⠀⠈⠁⠀⠀⠘⠉⠉⠉⠁⠀⠀⠀⠀⠹⢏⠀⠀⠐⠁⠀⠁⠺⠶⢋⣀⠓⠻⡄⠀⠀⠀⠈⠀⠀⡎
 ⠘⠆⠀⠀⠀⠀⠀⠀⠀⠀⣸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠂⠀⠀⠀⠀⠀⠀⠀⠈⠉⠀⠀⢳⡀⠀⠀⠀⢀⠼⠀
-
+ ----------------------------------------------------------------------------------------------------------------
  Song Name: 240 Bits Per Mile (by Leon Riskin)
  [https://freddy-fazbears-pizzeria-simulator.fandom.com/wiki/240_Bits_Per_Mile]
  
@@ -81,7 +81,12 @@
  
  Remark: Chosen out of all other potential songs because it is esoteric, and also
  this song (and others) got me through that horrible weekend when I had to rush
- MA1522 Homework 1 and CS1231S Assignment 1 submissions;
+ MA1522 Homework 1 and CS1231S Assignment 1 submissions
+ 
+ Disclaimer: The ASCII artworks are not done by me, I got them from the web; 
+ Also, one of the bars of the song, the 23rd one, may sound weird/glitchy/fuzzy,
+ this is intended by the composer :) Please don't penalise for it O_O
+ ---------------------------------------------------------------------------------------------------------------- 
  */
 function later_that_night() {
     
@@ -103,6 +108,8 @@ function later_that_night() {
             return append(firstList, flatten(restLists));
         }
     }
+    
+    const p = (x, y) => pair(x, y);
 
     function chords() {
         
@@ -110,9 +117,8 @@ function later_that_night() {
             return stacking_adsr(square_sound, midi_note_to_frequency(note), duration, list(adsr(0, 0.2, 0.7, 0.3)));
         }
         
-        // A B E
-        // bar: 2   1: 0.5   and: 0.25   e: 0.125   bruh: 0.0625
-        const p = (x, y) => pair(x, y);
+        // A B E are flats
+        // bar: 2   1: 0.5   and: 0.25   e: 0.125   bruh: 0.0625    metronome: 120 BPM
         const one = list(p("Eb4",1),p("G3",1),p("C4",1),p("G3",1),p("Eb4",1),p("G3",1),p("C4",1),p("G3",1),p("Eb4",1),p("G3",1),p("C4",1),p("G3",1),p("Eb4",1),p("G3",1),p("C4",1),p("G3",1));
         const two = list(p("Eb4",1),p("Ab3",1),p("C4",1),p("Ab3",1),p("Eb4",1),p("Ab3",1),p("C4",1),p("Ab3",1),p("Eb4",1),p("Ab3",1),p("C4",1),p("Ab3",1),p("Eb4",1),p("Ab3",1),p("C4",1),p("Ab3",1));
         const three = list(p("Eb4",1),p("F3",1),p("C4",1),p("F3",1),p("Eb4",1),p("F3",1),p("C4",1),p("F3",1),p("Eb4",1),p("F3",1),p("C4",1),p("F3",1),p("Eb4",1),p("F3",1),p("C4",1),p("F3",1));
@@ -190,8 +196,7 @@ function later_that_night() {
             return stacking_adsr(square_sound, midi_note_to_frequency(note), duration, list(adsr(0, 0.5, 0.75, 1.2)));
         }
         
-        // A B E
-        const p = (x, y) => pair(x, y);
+        // A B E are flats
         const one = list(p("C1", 0.5), p("C1", 0.5), p("C1", 0.375), p("C1", 0.25), p("C1", 0.375));
         const two = list(p("Ab1", 0.5), p("Ab1", 0.5), p("Ab1", 0.375), p("Ab1", 0.125 + 0.5));
         const three = list(p("F1", 0.5), p("F1", 0.5), p("F1", 0.375), p("F1", 0.25), p("F1", 0.375));
@@ -250,7 +255,7 @@ function later_that_night() {
             return stacking_adsr(square_sound, midi_note_to_frequency(note), duration, list(adsr(0, 0.3, 0.5, 0.6)));
         }
         
-        // A B E
+        // A B E are flats
         const all = silence_sound(16);
         const nine = list("Eb4", "G3", "C4", "G3", "Eb4", "G3", "C4", "G3", "Eb4", "G3", "C4", "G3", "Eb4", "G3", "C4", "G3");
         const ten = list("Eb4", "Ab3", "C4", "Ab3", "Eb4", "Ab3", "C4", "Ab3", "Eb4", "Ab3", "C4", "Ab3", "Eb4", "Ab3", "C4", "Ab3");
