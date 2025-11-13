@@ -1,3 +1,14 @@
+function split(p, xs) {
+    
+    const yes = filter(p, xs);
+    const no = filter(q => !p(q), xs);
+    
+    return pair(yes, no);
+    
+}
+
+//-----------------------------------------------------------------------------------------------------------------------
+
 function kolakoski() {
 
     let stack = [1, 2, 2];
